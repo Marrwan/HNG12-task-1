@@ -1,13 +1,16 @@
 {
-  "name": "hng12-api-task-1",
-  "version": "0.0.0",
+  "name": "hng12-api",
+  "version": "1.0.0",
+  "description": "HNG12 Public API returning email, timestamp, and GitHub repo",
+  "author": {
+    "name": "Abdulbasit Damilola Alabi"
+  },
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "date-fns": "^4.1.0",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",

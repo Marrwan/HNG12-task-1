@@ -1,11 +1,13 @@
-var createError = require('http-errors');
-var express = require('express');
+const createError = require('http-errors');
+const express = require('express');
+const cors = require("cors");
+const logger = require('morgan');
 
+const app = express();
 
-var logger = require('morgan');
-
-var app = express();
-
+app.use(cors({
+    origin: '*',
+}));
 
 app.use(logger('dev'));
 app.use(express.json());
